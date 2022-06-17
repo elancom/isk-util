@@ -18,7 +18,9 @@ const config = {
     host: "localhost",
   },
   plugins: [
+    // 修改配置
     new CleanWebpackPlugin(),
+    // END
     new HtmlWebpackPlugin({
       template: "index.html",
     }),

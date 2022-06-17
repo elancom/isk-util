@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.9",
   "name": "isk-util",
   "description": "isk-util",
   "main": "./dist/main.js",
@@ -37,5 +37,6 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "private": false
 }

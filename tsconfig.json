@@ -1,27 +1,28 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
+    //    "noImplicitAny": true,
     "module": "es6",
-    "target": "es5",
+    "target": "es2020",
     "allowJs": true,
     // 修改配置
+    "strict": true,
     "outDir": "./dist/",
     "sourceMap": false,
-    "noUnusedLocals": true,
+    //    "noUnusedLocals": true,
     "declaration": true,
     // 是否生成声明文件
-    "declarationDir": "./dist/",
+    //    "declarationDir": "./dist/",
     // 声明文件打包的位置
     "declarationMap": false,
     // 是否生成声明文件map文件（便于调试）
-    "moduleResolution": "node",
-    "types": [
-      "node"
-    ],
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
+    //    "moduleResolution": "node",
+    //    "types": [
+    //      "node"
+    //    ],
+    //    "typeRoots": [
+    //      "./node_modules/@types"
+    //    ],
     "baseUrl": ".",
     "paths": {
       "@/*": [
