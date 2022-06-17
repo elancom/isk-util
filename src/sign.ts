@@ -1,4 +1,4 @@
-import {md5} from "@/crypto";
+import {md5} from "./crypto";
 
 export function sign(data: Record<string, any>, key: string) {
   // let keys = Object.keys(data)

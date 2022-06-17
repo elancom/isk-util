@@ -1,5 +1,5 @@
 {
-  "version": "1.0.9",
+  "version": "1.0.13",
   "name": "isk-util",
   "description": "isk-util",
   "main": "./dist/main.js",
