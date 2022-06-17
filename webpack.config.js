@@ -11,7 +11,7 @@ const stylesHandler = "style-loader";
 const config = {
   entry: "./src/index.ts",
   output: {
-    path: path.resolve(__dirname, ""), // 去掉dist目录
+    path: path.resolve(__dirname, "dist"),
   },
   devServer: {
     open: true,
