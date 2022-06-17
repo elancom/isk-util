@@ -24,9 +24,10 @@ export function randomCodes(count: number): string {
 }
 
 export function randomSpec(count: number, spec: string): string {
-  let ss = []
+  let ss: string[] = []
   for (let i = 0; i < count; i++) {
-    ss.push(spec.charAt(randomInt(0, spec.length)))
+    let pos = randomInt(0, spec.length);
+    ss.push(spec.charAt(pos))
   }
   return ss.join("")
 }

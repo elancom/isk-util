@@ -1,3 +1,7 @@
+export interface OkHandler {
+  onOk: () => void
+}
+
 export function func(...fs: any) {
   return async function () {
     if (fs == null || fs.length === 0) {
