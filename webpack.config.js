@@ -2,16 +2,14 @@
 
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV === "production";
 
-const stylesHandler = "style-loader";
-
 const config = {
-  entry: "./src/index.ts",
+  entry: "./lib/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "lib"),
+    filename: 'index.js',
   },
   devServer: {
     open: true,
@@ -19,14 +17,11 @@ const config = {
   },
   plugins: [
     // 修改配置
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     // END
     new HtmlWebpackPlugin({
       template: "index.html",
     }),
-
-    // Add your plugins here
-    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
   module: {
     rules: [
@@ -35,25 +30,12 @@ const config = {
         loader: "ts-loader",
         exclude: ["/node_modules/"],
       },
-      {
-        test: /\.less$/i,
-        use: [stylesHandler, "css-loader", "postcss-loader", "less-loader"],
-      },
-      {
-        test: /\.css$/i,
-        use: [stylesHandler, "css-loader", "postcss-loader"],
-      },
-      {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: "asset",
-      },
-
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
+    extensions: [".ts", "..."],
     // 修改配置
     alias: {
       "@": require('path').resolve("src"),

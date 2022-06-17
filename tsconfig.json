@@ -1,24 +1,25 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "module": "esnext",
-    "target": "es6",
+    "target": "ES5",
     "allowJs": true,
     // 修改配置
     "strict": true,
-    "outDir": "./dist/",
-    "sourceMap": true,
+    "outDir": "./lib/",
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "noImplicitAny": true,
     "declaration": true,
+    "declarationDir": "./lib",
     "declarationMap": false,
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "module": "ES6",
     "moduleResolution": "Node",
+    "resolveJsonModule": true,
     "types": [
-      "node"
-    ],
-    "typeRoots": [
-      "./node_modules/@types"
+      "node",
+      "jest"
     ],
     "baseUrl": ".",
     "paths": {
@@ -33,7 +34,7 @@
   ],
   // 修改配置
   "include": [
-    "src/**/*.ts",
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
