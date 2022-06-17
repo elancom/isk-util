@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    // 修改配置
+    "outDir": "./dist/",
+    "sourceMap": false,
+    "noUnusedLocals": true,
+    "declaration": true,
+    // 是否生成声明文件
+    "declarationDir": "./dist/",
+    // 声明文件打包的位置
+    "declarationMap": false,
+    // 是否生成声明文件map文件（便于调试）
+    "moduleResolution": "node",
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+    // END
+  },
+  "files": [
+    "src/index.ts"
+  ],
+  // 修改配置
+  "include": [
+    "src/**/*.ts",
+    "typings.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "*.test.ts"
+  ]
+  // END
+}
