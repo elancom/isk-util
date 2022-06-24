@@ -34,11 +34,3 @@ export function aesDecrypt(data: string, key: any) {
 export function md5(data: string) {
   return _md5(data)
 }
-
-export function base64Encode(str: string): string {
-  return encodeURIComponent(str)
-}
-
-export function base64Decode(str: string): string {
-  return decodeURIComponent(str)
-}
