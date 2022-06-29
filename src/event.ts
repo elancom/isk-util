@@ -1,6 +1,6 @@
 export interface Event {
   name: string
-  data: any
+  data?: any
 }
 
 interface Subscribe {
