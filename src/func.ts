@@ -10,3 +10,7 @@ export function func(...fs: any) {
     await Promise.all(fs.map((it: any) => it()))
   }
 }
+
+export function call(fs: any, ...args:any) {
+    fs.call(null, args)
+}

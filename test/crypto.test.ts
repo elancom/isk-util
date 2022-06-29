@@ -5,3 +5,6 @@ test('md5 test', () => {
   console.log(s)
   expect(s).toEqual("c6f057b86584942e415435ffb1fa93d4")
 });
+
+test('enc test', () => {
+});
