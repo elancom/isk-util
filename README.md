@@ -3,13 +3,6 @@
 This project has been created using **webpack-cli**, you can now run
 
 ```
-npm run build
+发布
+del dist /s/q && del lib /s/q && yarn tsc && npm publish
 ```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
